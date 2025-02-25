@@ -1,9 +1,9 @@
-import pyttsx3
-import PyPDF2
-book = open('harrypotter.pdf', 'rb')
-pdfReader = PyPDF2.PdfReader(book)
-pages = len(pdfReader.pages)
-print("This is the Complete Harry Potter Collection")
+import pyttsx3 #import text to speech
+import PyPDF2 #import to read pdf
+book = open('harrypotter.pdf', 'rb') # To access the pdf in this folder
+pdfReader = PyPDF2.PdfReader(book) #so that PyPDF2 has access to the pdf
+pages = len(pdfReader.pages) #so that PDF reader can access specific pages
+print("This is the Complete Harry Potter Collection") #Options for the readers
 print("CONTENTS \n Harry Potter and the Sorcerer’s Stone (11-273)") 
 print("Harry Potter and the Chamber of Secrets(281-564)")
 print("Harry Potter and the Prisoner of Azkaban(572-938)")
